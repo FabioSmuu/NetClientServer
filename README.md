@@ -13,7 +13,7 @@
 
 - Gif demonstrativo:
 - 
-![N|Solid](https://i.imgur.com/MlSX5WR.gif)
+![N|Solid](https://imgur.com/MlSX5WR.gif)
 
 
 **Obrigado pela sua atenção!**
