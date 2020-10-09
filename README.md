@@ -12,6 +12,8 @@
 | readline |Nativa |
 
 - Gif demonstrativo:
+
+
 ![N|Solid](https://i.imgur.com/eNzDFzt.gif)
 
 
