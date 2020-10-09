@@ -11,7 +11,7 @@
 | net | Nativa |
 | readline |Nativa |
 
-Gif demonstrativo:
+- Gif demonstrativo:
 ![N|Solid](https://i.imgur.com/eNzDFzt.gif)
 
 
