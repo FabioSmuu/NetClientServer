@@ -12,7 +12,7 @@
 | readline |Nativa |
 
 - Gif demonstrativo:
-- 
+
 ![N|Solid](https://imgur.com/MlSX5WR.gif)
 
 
