@@ -1,14 +1,13 @@
 const net = require('net'),
+clients = new Set(),
+HOST = '127.0.0.1',
+PORT = 30000,
 {createInterface} = require('readline'),
 cmd = createInterface({
 	input: process.stdin,
 	output: process.stdout
 })
 
-var HOST = '127.0.0.1'
-var PORT = 30000
-
-var clients = new Set()
 clients.send = function (data, client) {
 	for (let c of this) {
 		if (client && c !== client) c.write(data)
@@ -19,7 +18,7 @@ cmd.on('line', msg => {
 	clients.send(`[SERVER] ${msg}`, true)
 })
 
-var server = net.createServer(async client => {
+const server = net.createServer(async client => {
 	clients.add(client)
 	console.log(`On: ${client.remoteAddress}:${client.remotePort}`)
 	clients.send(`${client.remotePort} Entrou.`, client)
