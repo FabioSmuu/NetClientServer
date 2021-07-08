@@ -1,17 +1,16 @@
-const {Socket} = require('net'),
-{createInterface} = require('readline')
+const { Socket } = require('net')
+, { createInterface } = require('readline')
+, client = new Socket()
+, HOST = '127.0.0.1'
+, PORT = 30000
 
-var HOST = '127.0.0.1'
-var PORT = 30000
-
-let client = new Socket()
 client.connect(PORT, HOST, async => {
 	process.title = `[Client] ${HOST}:${PORT}`
 })
 
 client.on('connect', async => {
 	console.log('Você esta conectado')
-	let cmd = createInterface({
+	const cmd = createInterface({
 	  input: process.stdin,
 	  output: process.stdout
 	})
